@@ -1,0 +1,131 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .calculator {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px black;
+      width: 280px;
+    }
+    
+
+    #result {
+      width: 260px;
+      height: 50px;
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: right;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      color : black;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    button {
+      padding: 20px;
+      font-size: 18px;
+      border: none;
+      background: #eee;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #ddd;
+    }
+    .operator {
+      background: #f9c74f;
+    }
+    .equals {
+      background: #90be6d;
+      color: white;
+    }
+    .clear {
+      background: #f94144;
+      color: white;
+    }
+    
+    
+body.light-theme {
+  background: #f8f8f8;
+  color: #000;
+}
+
+
+body.light-theme #themeIcon{
+  color : 	#0096FF;
+  font-size : 20px;
+}
+
+body.dark-theme {
+  background: #121212;
+  color: #fff;
+}
+
+body.dark-theme .calculator {
+  background: #1e1e1e;
+  box-shadow: 0 4px 12px red;
+}
+
+body.dark-theme button {
+  background: #333;
+  color: #fff;
+}
+
+body.dark-theme .operator {
+  background: #f9c74f;
+  color: #000;
+}
+
+body.dark-theme .equals {
+  background: #90be6d;
+  color: #fff;
+}
+
+body.dark-theme .clear {
+  background: red;
+  color: #fff;
+}
+    body {
+  transition: background 0.3s, color 0.3s;
+}
+
+ 
+body.dark-theme #result{
+  color:white;
+}
+
+
+body.dark-theme #themeIcon{
+  color: yellow;
+  font-size : 20px;
+  
+}
+
+#themeToggle {
+  /* position:absolute;
+  top: 515px;
+  right: 40px; */
+  
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ccc;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+#themeToggle:hover {
+  background: #bbb;
+}
+
